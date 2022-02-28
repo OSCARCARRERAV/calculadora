@@ -1,6 +1,10 @@
 package com.test.calculadora.utils;
 
 public class Constants {
+	
+	private Constants() {
+		
+	}
 
 	public static final String WRONG_NUMBER = "numero incorrecto, los números deben enviarse como Strings y se debe usar el punto para la posición decimal";
 	
