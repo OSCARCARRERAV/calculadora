@@ -45,12 +45,12 @@
 			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/oscar.carrera/Documents/SANITAS2/calculadora/libs/tracer-1.0.0.jar" sourcepath="C:/Users/oscar.carrera/Documents/SANITAS2/calculadora/libs/tracer-1.0.0-sources.jar">
+	<classpathentry exported="true" kind="lib" path="C:/Users/oscar.carrera/Documents/SANITAS2/calculadora/libs/tracer-1.0.0.jar" sourcepath="C:/Users/oscar.carrera/Documents/SANITAS2/calculadora/libs/tracer-1.0.0-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/oscar.carrera/Documents/SANITAS2/calculadora/libs/tracer-1.0.0-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/oscar.carrera/Documents/SANITAS2/calculadora/libs/tracer-1.0.0-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/oscar.carrera/Documents/SANITAS2/calculadora/libs/tracer-1.0.0-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/oscar.carrera/Documents/SANITAS2/calculadora/libs/tracer-1.0.0-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/oscar.carrera/Documents/SANITAS2/calculadora/libs/tracer-1.0.0-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
