@@ -1,4 +1,4 @@
-package exception;
+package com.test.calculadora.exception;
 
 
 public class NotAcceptableErrorDTO {

@@ -1,4 +1,4 @@
-package exception;
+package com.test.calculadora.exception;
 
 import org.springframework.http.HttpStatus;
 
