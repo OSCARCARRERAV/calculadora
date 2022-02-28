@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
-
+@SpringBootTest
 class CalculatorServiceTests {
 	
 	@Autowired
@@ -24,7 +24,7 @@ class CalculatorServiceTests {
 	static String wrongNumber2;
 	static Character addOperator;
 	static Character substractOperator;
-	
+	@Value("#{'${operators.valid}'.split(',')}")
 	List<Character> operatorsList;
 
 	@BeforeEach
