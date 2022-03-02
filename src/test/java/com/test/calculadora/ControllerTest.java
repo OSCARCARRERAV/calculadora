@@ -28,10 +28,6 @@ import com.test.calculadora.service.CalculatorService;
 @WebMvcTest(Controller.class)
 class ControllerTest {
 
-	private Controller createTestSubject() {
-		return new Controller();
-	}
-
 	
 	@MockBean
 	CalculatorService calculator;
