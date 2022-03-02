@@ -14,7 +14,7 @@ En este proyecto elaboraremos una calculadora para operaciones de suma y resta d
   	 
   	- Test para primer operando no válido
 	- Test para segundo operando no válido
-	- Test para operador no válido (aquí vemos la necesidad de establecer cuáles serán los operadores admitidos por el servicio)
+	- Test para operador no válido 
 	- Test para comprobar que las sumas se hacen correctamente
 	- Test para comprobar que las restas se hacen correctamente
 	- Test para comprobar que la operación de resta devuelve un valor negativo cuando el número a restar es mayor que el número del que se 	resta.  
@@ -24,7 +24,9 @@ En este proyecto elaboraremos una calculadora para operaciones de suma y resta d
  * Creación de excepción personalizada y servicio
  	
    Se implementa el servicio principal y una excepción para tratar los posibles errores.
- 	
-   Se añaden las librería para trazas y las trazas
    
  * Se añade controlador y DTO para la request
+ 
+  * Se añaden tests para el controlador 
+  
+  * Se añade librería de trazas y trazas en el servicio de calculadora.
