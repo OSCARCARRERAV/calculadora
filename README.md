@@ -30,3 +30,9 @@ En este proyecto elaboraremos una calculadora para operaciones de suma y resta d
   * Se añaden tests para el controlador 
   
   * Se añade librería de trazas y trazas en el servicio de calculadora.
+  
+  Para su utilización es necesario añadir las librería de trazas al repositorio local, esto puede hacerse mediante el comando de maven:
+  
+  mvn install:install-file -Dfile=<Ruta a la carpeta src/main/resources del proyecto en la máquina>\tracer-1.0.0.jar -DgroupId=io.corp.calculator -DartifactId=tracer -Dversion=1.0.0 -Dpackaging=jar
+  
+  
