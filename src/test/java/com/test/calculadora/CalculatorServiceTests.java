@@ -22,15 +22,13 @@ class CalculatorServiceTests {
 	
 	@Autowired
 	CalculatorService calculatorService;
-
+	
 	static String number1;
 	static String number2;
 	static String wrongNumber1;
 	static String wrongNumber2;
 	static Character addOperator;
 	static Character substractOperator;
-	@Value("#{'${operators.valid}'.split(',')}")
-	List<Character> operatorsList;
 
 	@BeforeEach
 	void initAll() {
