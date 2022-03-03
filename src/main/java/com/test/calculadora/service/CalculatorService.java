@@ -1,34 +1,25 @@
 package com.test.calculadora.service;
 
 import java.math.BigDecimal;
-
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-
 import com.test.calculadora.exception.NotAcceptableException;
-import com.test.calculadora.operations.SubstractOperation;
-import com.test.calculadora.operations.SumOperation;
+import com.test.calculadora.operations.Operation;
 import com.test.calculadora.utils.Constants;
-
-import io.corp.calculator.TracerAPI;
 import io.corp.calculator.TracerImpl;
 
 @Service
 public class CalculatorService {
 
-	SumOperation sum;
-	SubstractOperation substract;
-	
-	
-	TracerImpl tracer=new TracerImpl();
-	
+	@Autowired
+	private List<Operation> operations;
 
-	public CalculatorService(SumOperation sum, SubstractOperation substract) {
+	TracerImpl tracer = new TracerImpl();
+
+	public CalculatorService(List<Operation> operations) {
 		super();
-		this.sum = sum;
-		this.substract = substract;
-	
+		this.operations = operations;
 	}
 
 	public BigDecimal executeOperation(String operand1, String operand2, Character operator)
@@ -48,18 +39,16 @@ public class CalculatorService {
 			throw new NotAcceptableException(Constants.WRONG_NUMBER);
 		}
 
-		switch (operator) {
-		case '+':
-			result= sum.exec(number1, number2);
-		 tracer.trace(resultTrace(operand1,operand2,operator,result));
-		 return result;
-		case '-':
-			result= substract.exec(number1, number2);
-		 tracer.trace(resultTrace(operand1,operand2,operator,result));
-		 return result;
-		default:
-			throw new NotAcceptableException(Constants.WRONG_OPERATOR + operator.toString());
+		for (Operation o : operations) {
+			if (o.valid(operator)) {
+				result = o.exec(number1, number2);
+				tracer.trace(resultTrace(operand1, operand2, operator, result));
+				return result;
+			}
+
 		}
+		tracer.trace(Constants.WRONG_OPERATOR + operator.toString());
+		throw new NotAcceptableException(Constants.WRONG_OPERATOR + operator.toString());
 
 	}
 

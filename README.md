@@ -23,13 +23,15 @@ En este proyecto elaboraremos una calculadora para operaciones de suma y resta d
  	
  * Creación de excepción personalizada y servicio
  	
-   Se implementa el servicio principal y una excepción para tratar los posibles errores.
+ * Se implementa el servicio principal y una excepción para tratar los posibles errores.
    
  * Se añade controlador y DTO para la request
  
   * Se añaden tests para el controlador 
   
   * Se añade librería de trazas y trazas en el servicio de calculadora.
+  
+  * Se sustituye el switch en el servicio por una lista de Componentes de Spring para poder añadir nuevas operaciones simplemente creando la clase pertinente sin tocar el servicio.
   
   Para su utilización es necesario añadir las librería de trazas al repositorio local, esto puede hacerse mediante el comando de maven:
   
