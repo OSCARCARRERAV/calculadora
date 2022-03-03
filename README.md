@@ -21,13 +21,13 @@ En este proyecto elaboraremos una calculadora para operaciones de suma y resta d
 	
  	En los tests de operaciones correctas comprobaremos el resultado su signo y su precisión con el resultado esperado.
  	
- * Creación de excepción personalizada y servicio
+ * Creación de excepción personalizada y servicio.
  	
  * Se implementa el servicio principal y una excepción para tratar los posibles errores.
    
- * Se añade controlador y DTO para la request
+ * Se añade controlador y DTO para la request.
  
-  * Se añaden tests para el controlador 
+  * Se añaden tests para el controlador.
   
   * Se añade librería de trazas y trazas en el servicio de calculadora.
   
